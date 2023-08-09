@@ -1,0 +1,32 @@
+{
+  "name": "@bbcommons/bdckit",
+  "version": "0.0.0",
+  "description": "A command-line tool for working with FCC BDC data",
+  "author": "Broadband Commons <hello@bbcommons.org>",
+  "keywords": [
+    "broadband",
+    "broadband-mapping",
+    "digital-divide",
+    "fcc"
+  ],
+  "license": "GPL-3.0-only",
+  "homepage": "https://github.com/broadband-commons/bdckit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/broadband-commons/bdckit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/broadband-commons/bdckit/issues"
+  },
+  "type": "module",
+  "bin": {
+    "bdc": "./cli.js"
+  },
+  "dependencies": {
+    "async": "^3.2.4",
+    "chalk": "^5.2.0",
+    "commander": "^10.0.1",
+    "figlet": "^1.6.0",
+    "yauzl-promise": "^4.0.0"
+  }
+}
