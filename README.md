@@ -4,6 +4,9 @@ A command-line tool for working with FCC Broadband Data Collection (BDC) data
 
 ## Installation
 
+TODO not yet packaged; see Development section for how to install in development
+mode
+
 ## Usage
 
 ### `bdc download`
@@ -34,9 +37,6 @@ Examples:
 
 ### Development
 
-To install the CLI from a local copy of the code:
-
-```bash
-npm i -g .
-```
-
+1. Clone this repo to your local machine
+2. `cd` into the repo
+3. Run `npm i -g .`
