@@ -33,7 +33,7 @@ Examples:
 - Download fixed availability for all states for the latest filing period: `bdc download states fixed`
 - Download fixed availability for a previous filing date: `bdc download states fixed --filing-date 2022-12-31`
 
-### Development
+## Development
 
 1. Clone this repo to your local machine
 2. `cd` into the repo
