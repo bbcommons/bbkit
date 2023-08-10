@@ -1,5 +1,7 @@
 # bdckit
 
+> 🚨 this is just a wip/prototype and the cli syntax should probably be refactored to support downloading challenge data
+
 A command-line tool for working with FCC Broadband Data Collection (BDC) data
 
 ## Installation
