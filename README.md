@@ -1,8 +1,8 @@
-# bdckit
+# bbkit
 
-> 🚨 this is just a wip/prototype and the cli syntax should probably be refactored to support downloading challenge data
+> 🚨 this is a work in progress!
 
-A command-line tool for working with FCC Broadband Data Collection (BDC) data
+A command-line tool for working with broadband datasets (currently just FCC availability)
 
 ## Installation
 
@@ -11,27 +11,34 @@ mode
 
 ## Usage
 
-### `bdc download`
+### FCC Availability
+
+`bb bdc-availability download`
 
 ```bash
-Usage: bdc download [options] <entity_filter> <filing_filter> <save_dir>
-
-Download BDC data
+Usage: index [options] <entity-type> <entity-ids> <filing-type> <output-dir>
 
 Arguments:
-  entity_filter             Examples: "states", "states:ca", "providers:134234"
-  filing_filter             Examples: "fixed", "fixed:wired", "fixed:40,50", "supporting"
-  save_dir                  Path to directory where downloads should go. Use "." for the current directory.
+  entity-type                      Only `states` is supported currently
+  entity-ids                       `all`, or a comma-separated list of entity IDs, e.g. `ca,nv,az`
+  filing-type                      `fixed` or `mobile`
+  output-dir                       Path to the directory to save downloads to
 
 Options:
-  -d, --filing-date <date>  A previous filing date, e.g. "2023-06-30"
-  -h, --help                display help for command
+  -t, --tech <tech>                Technology names or codes to filter by, e.g. `fiber`, `3g`, `wired`, or
+                                   `10,40,50`
+  -f, --format <format>            File format (for mobile only; `gpkg` or `shp`)
+  -d, --filing-date <filing-date>
+  -h, --help
 ```
 
 Examples:
 
-- Download fixed availability for all states for the latest filing period: `bdc download states fixed`
-- Download fixed availability for a previous filing date: `bdc download states fixed --filing-date 2022-12-31`
+- Download fixed availability for all states for the latest filing period: `bb bdc-availability download states all fixed`
+- Download fixed availability for a previous filing date: `bb bdc-availability download states all fixed -d 2022-12-31`
+- Download all technologies for a single state: `bb bdc-availability download states oh fixed`
+- Download fiber availability for a single state: `bb bdc-availability download states oh fixed -t fiber`
+- Download all technologies for a few states: `bb bdc-availability download states co,wy,mt fixed`
 
 ## Development
 
