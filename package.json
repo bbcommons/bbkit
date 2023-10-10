@@ -1,7 +1,7 @@
 {
-  "name": "@bbcommons/bdckit",
+  "name": "@bbcommons/bbkit",
   "version": "0.0.0",
-  "description": "A command-line tool for working with FCC BDC data",
+  "description": "A command-line tool for working with broadband data",
   "author": "Broadband Commons <hello@bbcommons.org>",
   "keywords": [
     "broadband",
@@ -10,17 +10,17 @@
     "fcc"
   ],
   "license": "GPL-3.0-only",
-  "homepage": "https://github.com/broadband-commons/bdckit#readme",
+  "homepage": "https://github.com/broadband-commons/bbkit#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/broadband-commons/bdckit.git"
+    "url": "git+https://github.com/broadband-commons/bbkit.git"
   },
   "bugs": {
-    "url": "https://github.com/broadband-commons/bdckit/issues"
+    "url": "https://github.com/broadband-commons/bbkit/issues"
   },
   "type": "module",
   "bin": {
-    "bdc": "./cli.js"
+    "bb": "./lib/cli.js"
   },
   "dependencies": {
     "async": "^3.2.4",
