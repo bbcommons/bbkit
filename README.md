@@ -11,7 +11,7 @@ mode
 
 ## Usage
 
-### FCC Availability
+### BDC Availability
 
 `bb bdc-availability download`
 
@@ -32,7 +32,7 @@ Options:
   -h, --help
 ```
 
-Examples:
+#### Examples
 
 - Download fixed availability for all states for the latest filing period: `bb bdc-availability download states all fixed`
 - Download fixed availability for a previous filing date: `bb bdc-availability download states all fixed -d 2022-12-31`
