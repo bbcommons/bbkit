@@ -6,8 +6,19 @@ A command-line tool for working with broadband datasets (currently just FCC avai
 
 ## Installation
 
-TODO not yet packaged; see Development section for how to install in development
-mode
+To install bbkit:
+
+```bash
+npm i -g @bbcommons/bbkit
+```
+
+## Upgrading
+
+To upgrade bbkit:
+
+```bash
+npm i -g @bbcommons/bbkit@latest
+```
 
 ## Usage
 
