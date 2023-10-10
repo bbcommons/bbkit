@@ -1,6 +1,6 @@
 {
   "name": "@bbcommons/bbkit",
-  "version": "0.0.0",
+  "version": "0.1.0-alpha.1",
   "description": "A command-line tool for working with broadband data",
   "author": "Broadband Commons <hello@bbcommons.org>",
   "keywords": [
