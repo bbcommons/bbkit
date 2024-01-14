@@ -23,10 +23,10 @@
     "bb": "./lib/cli.js"
   },
   "dependencies": {
-    "async": "^3.2.4",
+    "async": "^3.2.5",
     "chalk": "^5.2.0",
     "commander": "^10.0.1",
-    "figlet": "^1.6.0",
+    "figlet": "^1.7.0",
     "yauzl-promise": "^4.0.0"
   }
 }
